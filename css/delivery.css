@@ -1,0 +1,62 @@
+.esp{
+  margin-top: 6%;
+}
+.tam{
+  height: 385px;
+}
+.div{
+  height: 150px;
+}
+body{
+	background-image: url(../img/background.jpg);
+  overflow-x: hidden;
+}
+.lar{
+  margin-top: 5%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+label{
+  color: white;
+}
+.let{
+  font-size: 1.5em;
+}
+ .img{
+   height: 50px;
+}
+.fonte{
+  font-size: 6em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media screen and (min-width: 360px) and (max-width: 640px){
+
+.fonte{
+  font-size: 4.5em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.tan{
+  height: 170px;
+}
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px){
+
+.fonte{
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+}
+@media screen and (min-width: 320px) and (max-width: 568px){
+
+.fonte{
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+}

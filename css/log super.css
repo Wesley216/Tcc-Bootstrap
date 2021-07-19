@@ -1,0 +1,34 @@
+.esp{
+  margin-top: 5%;
+}
+.tam{
+  height: 385px;
+}
+body{
+	background-image: url(../img/background.jpg);
+  overflow-x: hidden;
+}
+.div{
+  height: 150px;
+}
+.let{
+  font-size: 1.5em;
+}
+.img{
+  height: 50px;
+}
+.bot{
+	margin-left: 26%;
+}
+.bt{
+	height: 50px;
+	width: 128px;
+}
+.lar{
+  margin-top: 5%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+label{
+	color: white;
+}

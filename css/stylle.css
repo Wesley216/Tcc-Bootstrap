@@ -1,0 +1,106 @@
+.esp{
+    margin-top: 5%;
+  }
+  .espmin{
+     margin-top: 3%;
+  }
+  
+  body{
+      background-image: url(../img/background.jpg);
+    overflow-x: hidden;
+  }
+  .tam{
+    height: 385px;
+   }
+  .div{
+    height: 150px;
+  }
+  .let{
+    font-size: 1.5em;
+  }
+  .lef{
+      margin-left: 28%;
+  }
+  .img{
+    height: 460px;
+    width: 800px;
+  }
+  .rs{
+    height: 50px;
+  }
+  .pec{
+    margin-left: 15%;
+  }
+  label{
+    color: #fff;
+  }
+  .ess{
+    margin-top: 2%;
+  }
+  .fonte{
+    font-size: 6em;
+    font-weight: 300;
+    line-height: 1.2;
+    }
+  
+  @media screen and (min-width: 360px) and (max-width: 640px){
+  
+    .fonte{
+      font-size: 4.5em;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  
+    .tan{
+      height: 170px;
+    }
+  
+    .ta{
+      height: 100px;
+    }
+  
+    .carousel-item img{
+      height: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 812px){
+  
+    .fonte{
+      font-size: 3.5em;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  
+    .ta{
+      height: 100px;
+    }
+  
+    .carousel-item img{
+      height: 260px;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 568px){
+  
+    .fonte{
+      font-size: 3.5em;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  
+    .ta{
+      height: 100px;
+    }
+  
+    .carousel-item img{
+      height: 195px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .tan{
+      height: 110px;
+    }
+  }
+  

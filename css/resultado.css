@@ -1,0 +1,104 @@
+.img{
+	height: 50px;
+}
+/*TITULO DO CARDAPIO RESPONSIVO*/
+.fonte{
+  font-size: 6em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.esp{
+  margin-top: 10%;
+}
+.div{
+  height: 150px;
+}
+body{
+	background-image: url(../img/background.jpg);
+  overflow-x: hidden;
+}
+.let{
+  font-size: 1.5em;
+}
+.voto label{
+	cursor: pointer;
+}
+.voto label input{
+	display: none;
+}
+.voto label i{
+	font-size: 85px;
+  color: #fff;
+}
+.voto label i:before{
+	content: '\f005';
+}
+.voto label i.active{
+	color: gold;
+}
+.pes{
+  margin-left: 18%; 
+}
+.lef{
+	margin-left: 28%
+}
+label{
+  color: #fff;
+}
+.max{
+  max-width: 100%;
+}
+.butt{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 360px) and (max-width: 640px){
+  
+  .fonte{
+    font-size: 4.5em;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .tan{
+    height: 170px;
+  }
+
+  .ta{
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px){
+
+  .fonte{
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .ta{
+    height: 100px;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px){
+
+  .fonte{
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .ta{
+    height: 100px;
+  }
+}
+
+@media (max-width: 1450px){
+  .pes{
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Especialidades</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+</head>
+<body>
+<!--MENU-->
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../../index.html"><img style="height: 90px; position: relative; top: -10px;" src="../../img/logo-paddock12.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav mr-bar">
+        <a class="nav-item nav-link let" href="../../index.html">Home <span class="sr-only">(Página atual)</span></a>
+
+        <li class="nav-item">
+          <a class="nav-link active let" href="../../pag/Menu/menu.html">Cardapio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item nav-link let" href="../../pag/delivery.html">Delivery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item nav-link let" href="../../pag/onde estamos.html">Onde estamos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item nav-link let" href="../../php/avaliação/sessment.php">Avaliações</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container bg-danger esp div ta">
+    <p class="text-white text-center fonte">Especialidades</p>
+</div>
+
+<section class="container esp">
+    <article class="card-deck">
+        <div class="card border-light bg-transparent mb-3">
+            <img class="card-img-top" src="../../img/prod/Especialidade/carne seca.jpg">
+            <div class="card-body text-light text-center">
+              <h5 class="card-title text-danger text-center">Pastel de carne seca</h5>
+              <p class="card-text">R$ 6,00 - Unidade</p>
+              <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-1">Peça agora</a>
+
+              <div class="modal fade modal-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                   <p class="modal-title display-4">Tamanhos Disponíveis</p>
+                   <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+                     <span arial-label="true">&times;</span>
+                   </button>
+                   </div>
+
+                   <div class="modal-body">
+                    <form action="../../php/Menu/pastel.php" method="post">
+                    <label for="qtd"> Escolha a quantidade</label>
+                    <input type="range" class="form-control-range" name="qtd" id="quantidade1" value="1" min="1" max="10" required>
+
+                    <span id="result1">1</span>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" name="espec" value="Patel de carne seca" class="btn btn-outline-danger">Comprar</button>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-light bg-transparent mb-3">
+            <img class="card-img-top" src="../../img/prod/Especialidade/escondidinho de carne seca.jpg">
+            <div class="card-body text-light text-center">
+              <h5 class="card-title text-danger text-center">Escondidinho de carne seca</h5>
+              <p class="card-text">R$ 14,00</p>
+              <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-2">Peça agora</a>
+
+              <div class="modal fade modal-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                   <p class="modal-title display-4">Preços Disponíveis</p>
+                   <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+                     <span arial-label="true">&times;</span>
+                   </button>
+                   </div>
+
+                   <div class="modal-body">
+                    <form action="../../php/Menu/especialidade.php" method="post">
+                    <label for="tipo_especial"> Escolha</label>
+                    <select name="tipo_especial" class="form-control" required>
+                      <option value="" selected>--Selecione--</option>
+                      <option value="14,90">R$ 14,90</option>
+                    </select>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" name="espece" value="Escondidinho de carne seca" class="btn btn-outline-danger">Comprar</button>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </article>
+</section>
+
+<section class="container">
+    <article class="card-deck">
+
+        <div class="card border-light bg-transparent mb-3">
+            <img class="card-img-top" src="../../img/prod/Especialidade/escondidinho de camarao.png">
+            <div class="card-body text-light text-center">
+              <h5 class="card-title text-danger text-center">Escondidinho de camarão</h5>
+              <p class="card-text">R$ 19,00</p>
+              <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-3">Peça agora</a>
+
+              <div class="modal fade modal-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                   <p class="modal-title display-4">Preços Disponíveis</p>
+                   <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+                     <span arial-label="true">&times;</span>
+                   </button>
+                   </div>
+
+                   <div class="modal-body">
+                    <form action="../../php/Menu/especialidade.php" method="post">
+                    <label for="tipo_especial">Escolha</label>
+                    <select name="tipo_especial" class="form-control" required>
+                      <option value="" selected>--Selecione--</option>
+                      <option value="19,00">R$ 19,00</option>
+                    </select>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" name="espece" value="Escondidinho de camarão" class="btn btn-outline-danger">Comprar</button>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+       <div class="card border-light bg-transparent mb-3">
+            <img class="card-img-top" src="../../img/prod/Especialidade/camarao.jpg">
+            <div class="card-body text-light text-center">
+              <h5 class="card-title text-danger text-center">Pastel de camarão</h5>
+              <p class="card-text">R$ 7,50 - Unidade</p>
+              <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-4">Peça agora</a>
+
+              <div class="modal fade modal-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                   <p class="modal-title display-4">Preços Disponíveis</p>
+                   <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+                     <span arial-label="true">&times;</span>
+                   </button>
+                   </div>
+
+                   <div class="modal-body">
+                    <form action="../../php/Menu/pastel.php" class="" method="post">
+                
+                    <label for="quant"> Escolha a qunatidade</label>
+                    <input type="range" class="form-control-range" name="quant" id="quantidade" min="1" max="10" value="1">
+                    <span id="result">1</span>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" name="espec" value="Pastel de camarão" class="btn btn-outline-danger">Comprar</button>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </article>
+
+    <article class="card-deck">
+      <div class="card border-light bg-transparent mb-3">
+        <img class="card-img-top" src="../../img/prod/Especialidade/bbq.jpg">
+        <div class="card-body text-light text-center">
+          <h5 class="card-title text-danger text-center">Costela suína ao BBQ</h5>
+          <p class="card-text">R$ 77,00</p>
+          <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-5">Peça agora</a>
+
+          <div class="modal fade modal-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+               <p class="modal-title display-4">Preços Disponíveis</p>
+               <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+                 <span arial-label="true">&times;</span>
+               </button>
+               </div>
+
+               <div class="modal-body">
+                <form action="../../php/Menu/especialidade.php" method="post">
+                <label for="tipo_especial"> Escolha</label>
+                <select name="tipo_especial" class="form-control" required>
+                  <option value="" selected>--Selecione--</option>
+                  <option value="77,00">R$ 77,00</option>
+                </select>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="submit" name="espece" value="Costela Suína ao BBQ" class="btn btn-outline-danger">Comprar</button>
+                </div>
+                </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </article>
+</section>
+
+<footer class="pt-5 my-md-10 pt-md-10 bg-dark esp">
+
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="../../img/logo-paddock12.png" height="86">
+        <small class="d-block mb-3 text-muted">© 2020</small>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5 class="text-white">Contatos</h5>
+        <ul class="list-unstyled text-small">
+          <li><p class="text-white"><i class='fas fa-phone-alt'></i> (21)3777-0591</p></li>
+          <li><p class="text-white"><i class="fab fa-whatsapp" style="font-size: 20px;"></i> (21)97624-5283</p></li>
+          <li><p class="text-white">Av.automovel clube, Duque de Caxias 1155, Santa Cruz da Serra</p></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5 class="text-white">Redes Sociais</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#https://pt-br.facebook.com/pages/category/Pizza-Place/Paddock-826669250698077/"><img class="img" src="../../img/rede sociais/icone f.png"></a></li>
+          <li><a class="text-muted" href="https://www.instagram.com/paddockpizzas"><img class="img" src="../../img/rede sociais/logo insta.png"></a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../../js/va.js"></script>
+</body>
+</html>

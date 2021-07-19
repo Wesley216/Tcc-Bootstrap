@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Combo Super</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../../css/combo.css">
+</head>
+
+<body>
+<!-- MENU-->
+<header class="sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../../index.html"><img style="height: 90px; position: relative; top: -10px;" src="../../img/logo-paddock12.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav mr-bar">
+        <a class="nav-item nav-link active let" href="../../index.html">Home <span class="sr-only">(Página atual)</span></a>
+
+        <li class="nav-item">
+          <a class="nav-link let" href="../../pag/Menu/menu.html">Cardapio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item nav-link let" href="../../pag/delivery.html">Delivery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item nav-link let" href="../../pag/onde estamos.html">Onde estamos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-item nav-link let" href="../../php/avaliação/sessment.php">Avaliações</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+
+<div class="container bg-danger esp div">
+  <p class="fonte text-white text-center">Combo Super</p>
+</div>
+
+<section class="container esp" id="filter-btn-box">
+  <button id="bot-all" class="bot btn btn-outline-danger main-btn filter-btn botao active">Todos</button>
+  <button id="bot-trad" class="btn btn-outline-danger main-btn filter-btn botao">Tradicional</button>
+  <button id="bot-prem" class="ape btn btn-outline-danger main-btn filter-btn botao">Premium</button>
+  <button id="bot-sup" class="btn btn-outline-danger main-btn filter-btn botao">Super premium</button>
+</section>
+
+<!--TRADICIONAL CALABRESA E MARGUERITA-->
+<section class="container esp">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/calabresa.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza Calabresa</h5>
+        <p class="card-text">Mussarela, calabresa, cebola e oregano.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-xl">Peça agora</a>
+
+        <div class="modal fade modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza Calabresa " class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/marg.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza Margherita</h5>
+        <p class="card-text">Mussarela, manjericão, tomate e oregano.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x1">Peça agora</a>
+
+        <div class="modal fade modal-x1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza Margherita" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </article>
+</section>
+
+<!--TRADICIONAL PORTUGUESA E 4 QUEIJOS-->
+<section class="container">
+
+  <article class="card-deck">
+
+  <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/portuguesa.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza Portuguesa</h5>
+        <p class="card-text">Mussarela, presunto, ovo de cordona, azeitona preta, oregano e pimentão verde.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x2">Peça agora</a>
+
+        <div class="modal fade modal-x2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza Portuguesa" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/4 queijo.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza 4 queijo</h5>
+        <p class="card-text">Mussarela, parmessão, requeijão, gorgonzola e oregano.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x4">Peça agora</a>
+
+        <div class="modal fade modal-x4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza 4 queijos" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--TRADICIONAL FRANGO COM CREAM CHEESE E FRANGO COM CATUPIRY-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/cream chese.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Frango com Cream Cheese</h5>
+        <p class="card-text">Molho, muçarela, frango desfiado e cream chese.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x10">Peça agora</a>
+
+        <div class="modal fade modal-x10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande:  R$ 54,90</option>
+              </select>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza de Frango com Cream Chese" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/frang_cat1.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Frango com Catupiry</h5>
+        <p class="card-text">mussarela, frango desfiado, catupiry.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x5">Peça agora</a>
+
+        <div class="modal fade modal-x5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza de Frango com Catupiry" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--TRADICIONAL MUÇARELA E BAIANA-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/baiana1.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza Baiana</h5>
+        <p class="card-text">Molho de tomate, alho cru fatiado, mussarela, parmesão e folhas frescas de manjericão.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x6">Peça agora</a>
+
+        <div class="modal fade modal-x6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza Baiana" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/muça.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Muçarela</h5>
+        <p class="card-text">Molho, mussarela.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x7">Peça agora</a>
+
+        <div class="modal fade modal-x7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza de Muçarela" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--TRADICIONAL FRANGO GRELHADO E PRESUNTO-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/presunto.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Presunto</h5>
+        <p class="card-text">Molho, mussarela, presunto.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x8">Peça agora</a>
+
+        <div class="modal fade modal-x8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza de Presunto" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box trad">
+      <img class="card-img-top" src="../../img/prod/Tradicional/frango grelhado.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Frango grelhado</h5>
+        <p class="card-text">Molho, mussarela, frango em tiras, gotas de cream cheese, e alho poro.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x9">Peça agora</a>
+
+        <div class="modal fade modal-x9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button> 
+              <button type="submit" name="tipo_pizza" value="Combo Super - Tradicional - Pizza de Frango grelhado" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--PREMIUM CATUPERONE E MILHO COM BACON-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box prem">
+      <img class="card-img-top" src="../../img/prod/Premium/catuperone.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Catupeone</h5>
+        <p class="card-text">Molho, mussarela, peperoni, catupiry.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x01">Peça agora</a>
+
+        <div class="modal fade modal-x01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Catupeone" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box prem">
+      <img class="card-img-top" src="../../img/prod/Premium/milho e bacon.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Milho e Bacon</h5>
+        <p class="card-text">Molho, mussarela, milho, bacon , crean cheese.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-xll">Peça agora</a>
+
+        <div class="modal fade modal-xll" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xll">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+
+               <span arial-label="true">&times;</span>
+
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Milho e Bacon" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--PREMIUM CARNE SECA COM CATUPIRY E LOMBO DEFUMADO-->
+<section class="container">
+  <article class="card-deck">
+    
+  <div class="card border-light bg-transparent mb-3 project-box prem">
+    <img class="card-img-top" src="../../img/prod/Premium/carne seca cm catupiry.png">
+    <div class="card-body text-light text-center">
+      <h5 class="card-title text-danger text-center">Pizza de Carne Seca com Catupiry</h5>
+      <p class="card-text">Molho, mussarela, peperoni, catupiry.</p>
+      <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x001">Peça agora</a>
+
+      <div class="modal fade modal-x001" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+           <p class="modal-title display-4">Tamanhos Disponíveis</p>
+           <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+             <span arial-label="true">&times;</span>
+           </button>
+           </div>
+
+           <div class="modal-body">
+            <form action="../../php/combos/combo super.php" method="post">
+            <label for="tipo_combo"> Escolha o tamanho</label>
+            <select name="tipo_combo" class="form-control" required>
+              <option value="" selected>--Selecione--</option>
+              <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+            </select>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Carne Seca com Catupiry" class="btn btn-outline-danger">Comprar</button>
+          </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card border-light bg-transparent mb-3 project-box prem">
+    <img class="card-img-top" src="../../img/prod/Premium/lombo defumado.png">
+    <div class="card-body text-light text-center">
+      <h5 class="card-title text-danger text-center">Pizza de Lombo defumado</h5>
+      <p class="card-text">Molho, mussarela, milho, bacon , crean cheese.</p>
+      <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x00">Peça agora</a>
+
+      <div class="modal fade modal-x00" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+        <div class="modal-dialog modal-xll">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+           <p class="modal-title display-4">Tamanhos Disponíveis</p>
+           <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+
+             <span arial-label="true">&times;</span>
+
+           </button>
+           </div>
+
+           <div class="modal-body">
+            <form action="../../php/combos/combo super.php" method="post">
+            <label for="tipo_combo"> Escolha o tamanho</label>
+            <select name="tipo_combo" class="form-control" required>
+              <option value="" selected>--Selecione--</option>
+              <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+            </select>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+            <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Lombo defumado" class="btn btn-outline-danger">Comprar</button>
+          </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</section>
+
+<!--PREMIUM ATUM E BACON-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box prem">
+      <img class="card-img-top" src="../../img/prod/Premium/atum.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Atum</h5>
+        <p class="card-text">Molho, mussarela, peperoni, catupiry.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x25">Peça agora</a>
+
+        <div class="modal fade modal-x25" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo_super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Atum" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box prem">
+      <img class="card-img-top" src="../../img/prod/Premium/bacon.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Bacon</h5>
+        <p class="card-text">Molho, mussarela, milho, bacon , crean cheese.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x35">Peça agora</a>
+
+        <div class="modal fade modal-x35" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xll">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+
+               <span arial-label="true">&times;</span>
+
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Bacon" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--PREMIUM TOMATE SECO COM PESTO E PEITO DE PERU-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box prem">
+      <img class="card-img-top" src="../../img/prod/Premium/tomate.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Tomate seco com Pesto de rucula</h5>
+        <p class="card-text">Molho, mussarela, peperoni, catupiry.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x101">Peça agora</a>
+
+        <div class="modal fade modal-x101" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Tomate seco com Pesto de Rucula" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box prem">
+      <img class="card-img-top" src="../../img/prod/Premium/peru.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Peito de peru light</h5>
+        <p class="card-text">Molho, mussarela, milho, bacon , crean cheese.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-xl4l">Peça agora</a>
+
+        <div class="modal fade modal-xl4l" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xll">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+
+               <span arial-label="true">&times;</span>
+
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Premium - Pizza de Peito de peru light" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--SUPER PREMIUM CALABRESA ARTESANAL E CAMARÃO CM ALHO-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box sup">
+      <img class="card-img-top" src="../../img/prod/Super Premium/calabresa especial.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Calabresa artesanal</h5>
+        <p class="card-text">Molho, mussarela, nossa exclusiva calabresa , cebolas caramelizada, pimenta biquinho, tomilho.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x12">Peça agora</a>
+
+        <div class="modal fade modal-x12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 65,00">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Super Premium - Pizza de Calabresa artesanal" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box sup">
+      <img class="card-img-top" src="../../img/prod/Super Premium/camaron.png">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Camarão com alho poro</h5> 
+        <p class="card-text">Molho, mussarela, camarão, alho poro e crean cheese.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-lx">Peça agora</a>
+
+        <div class="modal fade modal-lx" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-lx">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+               <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Super Premium - Pizza de Camarão com alho poro" class="btn btn-outline-danger">Comprar</button>
+            </div>
+               </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!--SUPER PREMIUM PESTO E PALMITO CREMOSO-->
+<section class="container">
+
+  <article class="card-deck">
+
+    <div class="card border-light bg-transparent mb-3 project-box sup">
+      <img class="card-img-top" src="../../img/prod/Super Premium/pesto1.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Pesto</h5>
+        <p class="card-text">Molho, mussarela, nossa exclusiva calabresa , cebolas caramelizada, pimenta biquinho, tomilho.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-x120">Peça agora</a>
+
+        <div class="modal fade modal-x120" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande - R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Super Premium - Pizza de Pesto" class="btn btn-outline-danger">Comprar</button>
+            </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-light bg-transparent mb-3 project-box sup">
+      <img class="card-img-top" src="../../img/prod/Super Premium/palmito2.jpg">
+      <div class="card-body text-light text-center">
+        <h5 class="card-title text-danger text-center">Pizza de Palmito Cremoso</h5> 
+        <p class="card-text">Molho, mussarela, camarão, alho poro e crean cheese.</p>
+        <a href="#" class="btn btn-outline-danger btn-lg btn-block" data-toggle="modal" data-target=".modal-lxx">Peça agora</a>
+
+        <div class="modal fade modal-lxx" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hiden="true">
+          <div class="modal-dialog modal-lxx">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+             <p class="modal-title display-4">Tamanhos Disponíveis</p>
+             <button type="button" class="close" data-dismiss="modal" arial-label="Fechar">
+               <span arial-label="true">&times;</span>
+             </button>
+             </div>
+
+             <div class="modal-body">
+              <form action="../../php/combos/combo super.php" method="post">
+              <label for="tipo_combo"> Escolha o tamanho</label>
+              <select name="tipo_combo" class="form-control" required>
+                <option value="" selected>--Selecione--</option>
+                <option value="Grande R$ 54,90">Grande: R$ 54,90</option>
+              </select>
+               <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" name="tipo_pizza" value="Combo Super - Super Premium - Pizza de Palmito Cremoso" class="btn btn-outline-danger">Comprar</button>
+            </div>
+               </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<footer class="pt-5 my-md-10 pt-md-10 bg-dark esp">
+
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="../../img/logo-paddock12.png" height="86">
+        <small class="d-block mb-3 text-muted">© 2020</small>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5 class="text-white">Contatos</h5>
+        <ul class="list-unstyled text-small">
+          <li><p class="text-white"><i class='fas fa-phone-alt'></i> (21)3777-0591</p></li>
+          <li><p class="text-white"><i class="fab fa-whatsapp" style="font-size: 20px;"></i> (21)97624-5283</p></li>
+          <li><p class="text-white">Av.automovel clube, Duque de Caxias 1155, Santa Cruz da Serra</p></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <h5 class="text-white">Redes Sociais</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://pt-br.facebook.com/pages/category/Pizza-Place/Paddock-826669250698077/"><img class="rs" src="../../img/rede sociais/icone f.png"></a></li>
+          <li><a class="text-muted" href="https://www.instagram.com/paddockpizzas"><img class="rs" src="../../img/rede sociais/logo insta.png"></a></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../js/index.js"></script>
+</body>
+</html>

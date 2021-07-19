@@ -1,0 +1,24 @@
+.esp{
+	margin-top: 6%;
+}
+.div{
+	height: 150px;
+}
+body{
+	background-image: url(../img/background.jpg);
+	overflow-x: hidden;
+}
+label{
+	color: white;
+}
+.let{
+	font-size: 1.5em;
+}
+.img{
+	height: 50px;
+}
+.lar{
+	margin-top: 6%;
+	margin-left: 25%;
+	margin-right: 25%;
+}

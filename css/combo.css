@@ -1,0 +1,118 @@
+.botao{
+  height: 48px;
+  width: 126px;
+}
+.bot{
+	margin-left: 22%;
+}
+body{
+	background-image: url(../img/background.jpg);
+  overflow-x: hidden;
+}
+.rs{
+  height: 50px;
+}
+.let{
+  font-size: 1.5em;
+}
+.esp{
+  margin-top: 5%;
+}
+.div{
+  height: 150px;
+}
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .botao{
+    height: 48px;
+    width: 125px;
+  }
+  .bot{
+    margin-left: 15%;
+  }
+  .ape{
+    margin-left: 15%;
+  }
+  .tao {
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 568px){
+  .botao{
+    height: 42px;
+    width: 110px;
+  }
+  .bot{
+    margin-left: 15%;
+  }
+  .ape{
+    margin-left: 15%;
+  }
+  .tao {
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 812px){
+  .botao{
+    height: 48px;
+    width: 125px;
+  }
+  .bot{
+    margin-left: 15%;
+  }
+  .ape{
+    margin-left: 15%;
+  }
+  .tao {
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .botao{
+    height: 48px;
+    width: 125px;
+  }
+  .bot{
+    margin-left: 4%;
+  }
+  .ape{
+    margin-left: 0.5%;
+  }
+  .tao {
+    margin-left: 0.5%;
+  }
+}
+
+.fonte{
+  font-size: 6em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media screen and (min-width: 360px) and (max-width: 640px){
+
+  .fonte{
+    font-size: 4.5em;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .div{
+    height: 100px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 812px){
+
+  .fonte{
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 568px){
+
+.fonte{
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+}
