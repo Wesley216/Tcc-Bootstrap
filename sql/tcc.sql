@@ -1,26 +1,6 @@
 create database tcc;
 	use tcc;
 
-	/*create table cliente(
-		id int primary key auto_increment,
-		nome varchar(65),
-		tel varchar(13),
-		email varchar(25),
-		cpf varchar(14)
-		);
-
-	create table endereco(
-		id int primary key auto_increment,
-		rua varchar(65),
-		bairro varchar(65)
-		);
-
-	create table usuario(
-		id int primary key auto_increment,
-		email varchar(65),
-		senha varchar(65)
-		);*/
-
 	create table cad_dev(
 		id int primary key auto_increment,
 		nome varchar(65),
@@ -124,20 +104,4 @@ create database tcc;
 		id int primary key auto_increment,
 		comment varchar(75),
 		star varchar(5)
-	);	
-
-	/*SHOW COLUMNS FROM [nome da tabela]; mostrar as colunas de uma tabela*/
-	
-	select c.nome, c.rua, c.bairro, p.tam, p.tipo_pizza from cad_dev c, pedidos p where p.id_cad_dev = c.id limit 1;
-
-	select * from pedidos, cad_dev order by id DESC limit 1;
-
-	select c.nome, c.rua, c.bairro, p.tam, p.tipo_pizza from cad_dev c, pedidos p order by c.id, p.id_cad_dev desc limit 1;
-
-	select c.nome, c.rua, c.bairro, p.tipo_combo, p.tipo_pizza from cad_dev c, combo_super p order by c.id, p.id_cad_combo desc limit 1;
-
-	select * from pedidos where id_cad_dev = '2'; /*seleciona tds as colunas da tabela onde o id e = 2*/
-
-	/*order by id*/
-
-	select a.nome, a.bairro, a.rua, a.numero, c.tipo_combo, c.tipo_pizza from cad_combo a, combo_super c where a.id = 1 and c.id_cad_combo = 1 order by c.id desc limit 1;
+	);
